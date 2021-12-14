@@ -15,8 +15,15 @@
     <description>spring5-jokes-app-v2</description>
     <properties>
         <java.version>17</java.version>
+        <chuck-norris.version>2.4.0</chuck-norris.version>
     </properties>
     <dependencies>
+
+        <dependency>
+            <groupId>guru.springframework</groupId>
+            <artifactId>chuck-norris-for-actuator</artifactId>
+            <version>${chuck-norris.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
