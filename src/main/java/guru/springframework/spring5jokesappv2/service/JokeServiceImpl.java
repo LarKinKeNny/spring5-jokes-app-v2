@@ -3,16 +3,13 @@ package guru.springframework.spring5jokesappv2.service;
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
-
 @Service
-public class JokesServiceImpl implements JokesService {
+public class JokeServiceImpl implements JokeService {
 
-    private ChuckNorrisQuotes quotes;
+    private final ChuckNorrisQuotes quotes;
 
-    @PostConstruct
-    private void init() {
-        quotes = new ChuckNorrisQuotes();
+    public JokeServiceImpl(ChuckNorrisQuotes quotes) {
+        this.quotes = quotes;
     }
 
     @Override

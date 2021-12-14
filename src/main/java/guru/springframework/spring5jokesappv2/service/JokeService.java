@@ -1,6 +1,5 @@
 package guru.springframework.spring5jokesappv2.service;
 
-public interface JokesService {
-
+public interface JokeService {
     String getRandomQuote();
 }
